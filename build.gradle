@@ -12,7 +12,8 @@ buildscript {
     mvnUrl = properties.getProperty('mvn.url')
 
     repositories {
-      maven { url mvnUrl ?: '' }
+      mavenCentral()
+//      maven { url mvnUrl ?: '' }
       google()
     }
     dependencies {
@@ -27,7 +28,8 @@ buildscript {
 }
 allprojects {
   repositories {
-    maven { url mvnUrl ?: '' }
+    mavenCentral()
+//    maven { url mvnUrl ?: '' }
     google()
   }
 }
